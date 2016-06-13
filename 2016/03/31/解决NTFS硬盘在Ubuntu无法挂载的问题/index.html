@@ -6,22 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>解决NTFS移动硬盘在Ubuntu无法挂载的问题 | Yang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天向移动硬盘复制大量文件的时候，Ubuntu突然没有了反应，因此强行把移动硬盘拔了下来，结果悲剧了，再插上移动硬盘出现了下面这个错误。
-&amp;quot;Error mounting /dev/sdb1 at /media/fuzzy27/My Book: Command-line `mount -t &amp;quot;ntfs&amp;quot; -o 
-&amp;quot;uhelper=udisks2,nodev,n">
+  <meta name="description" content="&amp;#x4ECA;&amp;#x5929;&amp;#x5411;&amp;#x79FB;&amp;#x52A8;&amp;#x786C;&amp;#x76D8;&amp;#x590D;&amp;#x5236;&amp;#x5927;&amp;#x91CF;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#xFF0C;Ubuntu&amp;#x7A81;&amp;#x7136;&amp;#x6CA1;&amp;#x6709;&amp;#x4E86;&amp;#x53CD;&amp;#x5E94;&amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决NTFS移动硬盘在Ubuntu无法挂载的问题">
 <meta property="og:url" content="http://yoursite.com/2016/03/31/解决NTFS硬盘在Ubuntu无法挂载的问题/index.html">
 <meta property="og:site_name" content="Yang's Blog">
-<meta property="og:description" content="今天向移动硬盘复制大量文件的时候，Ubuntu突然没有了反应，因此强行把移动硬盘拔了下来，结果悲剧了，再插上移动硬盘出现了下面这个错误。
-&amp;quot;Error mounting /dev/sdb1 at /media/fuzzy27/My Book: Command-line `mount -t &amp;quot;ntfs&amp;quot; -o 
-&amp;quot;uhelper=udisks2,nodev,n">
+<meta property="og:description" content="&amp;#x4ECA;&amp;#x5929;&amp;#x5411;&amp;#x79FB;&amp;#x52A8;&amp;#x786C;&amp;#x76D8;&amp;#x590D;&amp;#x5236;&amp;#x5927;&amp;#x91CF;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#xFF0C;Ubuntu&amp;#x7A81;&amp;#x7136;&amp;#x6CA1;&amp;#x6709;&amp;#x4E86;&amp;#x53CD;&amp;#x5E94;&amp;#">
 <meta property="og:updated_time" content="2016-03-30T16:53:57.304Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决NTFS移动硬盘在Ubuntu无法挂载的问题">
-<meta name="twitter:description" content="今天向移动硬盘复制大量文件的时候，Ubuntu突然没有了反应，因此强行把移动硬盘拔了下来，结果悲剧了，再插上移动硬盘出现了下面这个错误。
-&amp;quot;Error mounting /dev/sdb1 at /media/fuzzy27/My Book: Command-line `mount -t &amp;quot;ntfs&amp;quot; -o 
-&amp;quot;uhelper=udisks2,nodev,n">
+<meta name="twitter:description" content="&amp;#x4ECA;&amp;#x5929;&amp;#x5411;&amp;#x79FB;&amp;#x52A8;&amp;#x786C;&amp;#x76D8;&amp;#x590D;&amp;#x5236;&amp;#x5927;&amp;#x91CF;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#xFF0C;Ubuntu&amp;#x7A81;&amp;#x7136;&amp;#x6CA1;&amp;#x6709;&amp;#x4E86;&amp;#x53CD;&amp;#x5E94;&amp;#">
   
     <link rel="alternative" href="/atom.xml" title="Yang&#39;s Blog" type="application/atom+xml">
   
@@ -211,7 +205,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天向移动硬盘复制大量文件的时候，Ubuntu突然没有了反应，因此强行把移动硬盘拔了下来，结果悲剧了，再插上移动硬盘出现了下面这个错误。</p>
+        <p>&#x4ECA;&#x5929;&#x5411;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x590D;&#x5236;&#x5927;&#x91CF;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;Ubuntu&#x7A81;&#x7136;&#x6CA1;&#x6709;&#x4E86;&#x53CD;&#x5E94;&#xFF0C;&#x56E0;&#x6B64;&#x5F3A;&#x884C;&#x628A;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x62D4;&#x4E86;&#x4E0B;&#x6765;&#xFF0C;&#x7ED3;&#x679C;&#x60B2;&#x5267;&#x4E86;&#xFF0C;&#x518D;&#x63D2;&#x4E0A;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x51FA;&#x73B0;&#x4E86;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
 <pre><code>&quot;Error mounting /dev/sdb1 at /media/fuzzy27/My Book: Command-line `mount -t &quot;ntfs&quot; -o 
 &quot;uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177&quot; &quot;/dev/sdb1&quot; 
 &quot;/media/fuzzy27/My Book&quot;&apos; exited with non-zero exit status 13: $MFTMirr does not match $MFT (record 0).
@@ -223,15 +217,15 @@ important! If the device is a SoftRAID/FakeRAID then first activate
 it and mount a different device under the /dev/mapper/ directory, (e.g.
 /dev/mapper/nvidia_eahaabcc1). Please see the &apos;dmraid&apos; documentation
 for more details.&quot;
-</code></pre><p>当出现这种问题时，解决方式正如提示给出的那样，在这里我把步骤详细说一下：<br>注：2到6步都是在Windows上进行。</p>
+</code></pre><p>&#x5F53;&#x51FA;&#x73B0;&#x8FD9;&#x79CD;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#x6B63;&#x5982;&#x63D0;&#x793A;&#x7ED9;&#x51FA;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x628A;&#x6B65;&#x9AA4;&#x8BE6;&#x7EC6;&#x8BF4;&#x4E00;&#x4E0B;&#xFF1A;<br>&#x6CE8;&#xFF1A;2&#x5230;6&#x6B65;&#x90FD;&#x662F;&#x5728;Windows&#x4E0A;&#x8FDB;&#x884C;&#x3002;</p>
 <ol>
-<li>从Linux上移除移动硬盘</li>
-<li>将该移动硬盘插到运行Windows的电脑上</li>
-<li>以管理员方式打开命令行窗口</li>
-<li>进入该移动硬盘的根目录，如盘符为K，则进入K盘的根目录</li>
-<li>输入chkdsk /f，回车，此时会有提示，显示目录正在被使用，重启时会检查该盘，balabala的还有一些，不用管他</li>
-<li>不要拔出设备，保存其他工作后，直接重启。再次启动时会检查并修复磁盘的错误</li>
-<li>修复完成后，该移动硬盘就可以正常挂载到Ubuntu中</li>
+<li>&#x4ECE;Linux&#x4E0A;&#x79FB;&#x9664;&#x79FB;&#x52A8;&#x786C;&#x76D8;</li>
+<li>&#x5C06;&#x8BE5;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x63D2;&#x5230;&#x8FD0;&#x884C;Windows&#x7684;&#x7535;&#x8111;&#x4E0A;</li>
+<li>&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;</li>
+<li>&#x8FDB;&#x5165;&#x8BE5;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x5982;&#x76D8;&#x7B26;&#x4E3A;K&#xFF0C;&#x5219;&#x8FDB;&#x5165;K&#x76D8;&#x7684;&#x6839;&#x76EE;&#x5F55;</li>
+<li>&#x8F93;&#x5165;chkdsk /f&#xFF0C;&#x56DE;&#x8F66;&#xFF0C;&#x6B64;&#x65F6;&#x4F1A;&#x6709;&#x63D0;&#x793A;&#xFF0C;&#x663E;&#x793A;&#x76EE;&#x5F55;&#x6B63;&#x5728;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x91CD;&#x542F;&#x65F6;&#x4F1A;&#x68C0;&#x67E5;&#x8BE5;&#x76D8;&#xFF0C;balabala&#x7684;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#xFF0C;&#x4E0D;&#x7528;&#x7BA1;&#x4ED6;</li>
+<li>&#x4E0D;&#x8981;&#x62D4;&#x51FA;&#x8BBE;&#x5907;&#xFF0C;&#x4FDD;&#x5B58;&#x5176;&#x4ED6;&#x5DE5;&#x4F5C;&#x540E;&#xFF0C;&#x76F4;&#x63A5;&#x91CD;&#x542F;&#x3002;&#x518D;&#x6B21;&#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x68C0;&#x67E5;&#x5E76;&#x4FEE;&#x590D;&#x78C1;&#x76D8;&#x7684;&#x9519;&#x8BEF;</li>
+<li>&#x4FEE;&#x590D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x8BE5;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6302;&#x8F7D;&#x5230;Ubuntu&#x4E2D;</li>
 </ol>
 
       
@@ -242,7 +236,7 @@ for more details.&quot;
     
 <nav id="article-nav">
   
-    <a href="/2016/06/13/Comnoid 静态污点分析工具/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/06/13/Comniod/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
