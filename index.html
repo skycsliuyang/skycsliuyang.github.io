@@ -173,6 +173,54 @@
 
       <div class="body-wrap">
   
+    <article id="post-Comnoid 静态污点分析工具" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/13/Comnoid 静态污点分析工具/" class="article-date">
+  	<time datetime="2016-06-13T04:44:28.309Z" itemprop="datePublished">2016-06-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Comnoid-静态污点分析工具"><a href="#Comnoid-静态污点分析工具" class="headerlink" title="Comnoid 静态污点分析工具"></a>Comnoid 静态污点分析工具</h2><p>@(Android)[程序分析|静态污点分析]<br>一个基于FlowDroid的静态污点分析工具，它可以提供更加精确的静态污点分析，并且可以分析应用程序间数据泄露。</p>
+<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><p>基于FlowDroid，主要包含两个工具：<br>ApkGrabber：收集用户手机上的应用程序。<br><img src="./1465786546512.png" alt="Alt text"></p>
+<p>Comnoid：接收apk输入，输出数据泄露报告。<br><img src="./1465786703338.png" alt="Alt text"></p>
+<p>Comnoid相比FlowDroid可以检测跨应用的信息泄露。主要增加了一个Inter app 处理模块。<br><img src="./1465787072774.png" alt="Alt text"></p>
+<p>Permission Mapper：<br>抽取应用程序使用的权限。并将其归类成四种。<br><img src="./1465788670861.png" alt="Alt text"></p>
+<p>Intent Analyser<br>主要检测implicit Intent，因为implicit Intent可能被恶意应用获取。当携带弱权限或者无权限限制implicit Intent存在，则存在app之间的数据泄露。</p>
+<p>Component Analyzer Moudle<br>从manifest文件和Dalvik指令中抽取component的信息。这些信息用来检查是否设置EXPORTED flag或者是否提供了intent filters。<br>如果一个exported component注册了一个non-Android action string，并且也发现component发出携带相同action string的implicit intent，则Comnoid报告一个数据泄露。<br>exported broadcast receivers报告一个broadcast injection leak，exported activities报告一个activity launch attack，exported services报告一个service launch attack。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-解决NTFS硬盘在Ubuntu无法挂载的问题" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
