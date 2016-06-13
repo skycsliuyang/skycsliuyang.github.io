@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Yang&#39;s Blog</title>
+  <title>Tag: Android, 程序分析, 静态污点分析 | Yang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yang's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/Android-程序分析-静态污点分析/index.html">
 <meta property="og:site_name" content="Yang's Blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -173,144 +173,52 @@
 
       <div class="body-wrap">
   
-    <article id="post-Comnoid 静态污点分析工具" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2016/06/13/Comnoid 静态污点分析工具/" class="article-date">
-  	<time datetime="2016-06-13T04:44:28.309Z" itemprop="datePublished">2016-06-13</time>
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/06/13/Comnoid 静态污点分析工具/" class="archive-article-date">
+  	<time datetime="2016-06-13T04:44:28.309Z" itemprop="datePublished">Jun 13</time>
 </a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/13/Comnoid 静态污点分析工具/">Comnoid 静态污点分析工具</a>
+      <a class="archive-article-title" href="/2016/06/13/Comnoid 静态污点分析工具/">Comnoid 静态污点分析工具</a>
     </h1>
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一个基于FlowDroid的静态污点分析工具，它可以提供更加精确的静态污点分析，并且可以分析应用程序间数据泄露。</p>
-<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><p>基于FlowDroid，主要包含两个工具：<br>ApkGrabber：收集用户手机上的应用程序。<br><img src="./images/1465786546512.png" alt="enter description here" title="1465786546512.png"></p>
-<p>Comnoid：接收apk输入，输出数据泄露报告。<br><img src="./images/1465786703338.png" alt="enter description here" title="1465786703338.png"></p>
-<p>Comnoid相比FlowDroid可以检测跨应用的信息泄露。主要增加了一个Inter app 处理模块。<br><img src="./images/1465787072774.png" alt="enter description here" title="1465787072774.png"></p>
-<p>Permission Mapper：<br>抽取应用程序使用的权限。并将其归类成四种。<br><img src="./images/1465788670861.png" alt="enter description here" title="1465788670861.png"></p>
-<p>Intent Analyser<br>主要检测implicit Intent，因为implicit Intent可能被恶意应用获取。当携带弱权限或者无权限限制implicit Intent存在，则存在app之间的数据泄露。</p>
-<p>Component Analyzer Moudle<br>从manifest文件和Dalvik指令中抽取component的信息。这些信息用来检查是否设置EXPORTED flag或者是否提供了intent filters。<br>如果一个exported component注册了一个non-Android action string，并且也发现component发出携带相同action string的implicit intent，则Comnoid报告一个数据泄露。<br>exported broadcast receivers报告一个broadcast injection leak，exported activities报告一个activity launch attack，exported services报告一个service launch attack。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android-程序分析-静态污点分析/">Android, 程序分析, 静态污点分析</a></li></ul>
 	</div>
 
-      
+          
 
-      
-      <div class="clearfix"></div>
-    </div>
-    
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
 </article>
-
-
-
-
-
-
-
-
-
   
-    <article id="post-解决NTFS硬盘在Ubuntu无法挂载的问题" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2016/03/31/解决NTFS硬盘在Ubuntu无法挂载的问题/" class="article-date">
-  	<time datetime="2016-03-30T16:31:51.831Z" itemprop="datePublished">2016-03-31</time>
-</a>
-    </div>
+    </div></section>
   
-  <div class="article-inner">
+
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/31/解决NTFS硬盘在Ubuntu无法挂载的问题/">解决NTFS移动硬盘在Ubuntu无法挂载的问题</a>
-    </h1>
-  
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天向移动硬盘复制大量文件的时候，Ubuntu突然没有了反应，因此强行把移动硬盘拔了下来，结果悲剧了，再插上移动硬盘出现了下面这个错误。</p>
-<pre><code>&quot;Error mounting /dev/sdb1 at /media/fuzzy27/My Book: Command-line `mount -t &quot;ntfs&quot; -o 
-&quot;uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177&quot; &quot;/dev/sdb1&quot; 
-&quot;/media/fuzzy27/My Book&quot;&apos; exited with non-zero exit status 13: $MFTMirr does not match $MFT (record 0).
-Failed to mount &apos;/dev/sdb1&apos;: Input/output error
-NTFS is either inconsistent, or there is a hardware fault, or it&apos;s a
-SoftRAID/FakeRAID hardware. In the first case run chkdsk /f on Windows
-then reboot into Windows twice. The usage of the /f parameter is very
-important! If the device is a SoftRAID/FakeRAID then first activate
-it and mount a different device under the /dev/mapper/ directory, (e.g.
-/dev/mapper/nvidia_eahaabcc1). Please see the &apos;dmraid&apos; documentation
-for more details.&quot;
-</code></pre><p>当出现这种问题时，解决方式正如提示给出的那样，在这里我把步骤详细说一下：<br>注：2到6步都是在Windows上进行。</p>
-<ol>
-<li>从Linux上移除移动硬盘</li>
-<li>将该移动硬盘插到运行Windows的电脑上</li>
-<li>以管理员方式打开命令行窗口</li>
-<li>进入该移动硬盘的根目录，如盘符为K，则进入K盘的根目录</li>
-<li>输入chkdsk /f，回车，此时会有提示，显示目录正在被使用，重启时会检查该盘，balabala的还有一些，不用管他</li>
-<li>不要拔出设备，保存其他工作后，直接重启。再次启动时会检查并修复磁盘的错误</li>
-<li>修复完成后，该移动硬盘就可以正常挂载到Ubuntu中</li>
-</ol>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -334,10 +242,10 @@ for more details.&quot;
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false
 	}
